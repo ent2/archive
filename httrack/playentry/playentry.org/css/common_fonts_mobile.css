@@ -1,0 +1,104 @@
+@font-face {
+  font-family: ng;
+  font-style: normal;
+  font-weight: 400;
+  src: local('나눔바른고딕 Regular'), local('Nanum Barun Gothic Regular'), local('Nanum Barun Gothic-Regular'), local('NanumBarunGothic Regular');
+  src: url('../fonts/NanumBarunGothic.woff') format('woff');
+}
+@font-face {
+  font-family: nanumBarunLight;
+  font-style: normal;
+  font-weight: 200;
+  src: local('나눔바른고딕 Light'), local('Nanum Barun Gothic Light'), local('Nanum Barun Gothic-Light'), local('NanumBarunGothic Light');
+  src: url('../fonts/NanumBarunGothicLight.woff') format('woff');
+}
+@font-face {
+  font-family: nanumBarunUltraLight;
+  font-style: normal;
+  src: local('나눔바른고딕 UltraLight'), local('Nanum Barun Gothic UltraLight'), local('Nanum Barun Gothic-UltraLight'), local('NanumBarunGothic UltraLight');
+  src: url('../fonts/NanumBarunGothicUltraLight.woff') format('woff');
+}
+@font-face {
+  font-family: nanumBarunRegular;
+  font-style: normal;
+  font-weight: 400;
+  src: local('나눔바른고딕'), local('Nanum Barun Gothic'), local('NanumBarunGothic');
+  src: url('../fonts/NanumBarunGothic.woff') format('woff');
+}
+@font-face {
+  font-family: nanumBarunGothic;
+  font-style: normal;
+  font-weight: 400;
+  src: local('나눔바른고딕'), local('Nanum Barun Gothic'), local('NanumBarunGothic');
+  src: url('../fonts/NanumBarunGothic.woff') format('woff');
+}
+@font-face {
+  font-family: NanumGothic;
+  font-style: normal;
+  font-weight: 400;
+  src: local('나눔고딕 Regular');
+  src: url('../fonts/NanumGothic-Regular.woff2') format('woff2'), url('../fonts/NanumGothic-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: nanumBarunBold;
+  font-style: normal;
+  font-weight: 700;
+  src: local('나눔바른고딕 Bold'), local('Nanum Barun Gothic Bold'), local('Nanum Barun Gothic-Bold'), local('NanumBarunGothic Bold');
+  src: url('../fonts/NanumBarunGothicBold.woff') format('woff');
+}
+@font-face {
+  font-family: notoSansRegular;
+  font-style: normal;
+  font-weight: 400;
+  src: local('notoSansRegular');
+  src: url('../fonts/NotoSansKR-subset-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: notoSansMedium;
+  font-style: normal;
+  font-weight: 400;
+  src: local('notoSansMedium');
+  src: url('../fonts/NotoSansKR-subset-Medium.woff') format('woff');
+}
+@font-face {
+  font-family: notoSansBold;
+  font-style: normal;
+  font-weight: 700;
+  src: local('notoSansBold');
+  src: url('../fonts/NotoSansKR-subset-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: NanumSquareRegular;
+  font-style: normal;
+  font-weight: 400;
+  src: local('NanumSquareRegular');
+  src: url('../fonts/NanumSquareRegular.woff') format('woff');
+}
+@font-face {
+  font-family: NanumSquareBold;
+  font-style: normal;
+  font-weight: 700;
+  src: local('NanumSquareBold');
+  src: url('../fonts/NanumSquareBold.woff') format('woff');
+}
+@font-face {
+  font-family: EntryFont;
+  font-style: normal;
+  font-weight: 400;
+  src: url('NanumGothic.html'), url('NanumGothicOTF.html');
+  src: url('../fonts/NanumGothic-Regular.woff2') format('woff2'), url('../fonts/NanumGothic-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: EntryFont;
+  font-style: normal;
+  font-weight: 600;
+  src: url('NanumGothicBold.html'), url('NanumGothicOTFBold.html');
+  src: url('../fonts/NanumGothic-Bold.woff2') format('woff2'), url('../fonts/NanumGothic-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: EntryFont;
+  font-style: normal;
+  font-weight: 700;
+  src: url('NanumGothicBold.html'), url('NanumGothicOTFBold.html');
+  src: url('../fonts/NanumGothic-Bold.woff2') format('woff2'), url('../fonts/NanumGothic-Bold.woff') format('woff');
+}

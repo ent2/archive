@@ -1,0 +1,7 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+playentry.org	TRUE	/	FALSE	1999999999	lang	en
+playentry.org	TRUE	/	FALSE	1999999999	_csrf	oeB77s3yONBDu0J_hTkl9NDG
+playentry.org	TRUE	/	FALSE	1999999999	SameSite	Strict
+playentry.org	TRUE	/	FALSE	1999999999	connect.sid	s%3AfT6jfnsVdJewG_5UTbnLbKtNRlQb0jSR.LSP4gEfTNELWRSgp3cClxOl6m8%2FwqxNye1LBUAN5%2BQk
+

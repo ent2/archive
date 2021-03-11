@@ -1,0 +1,31 @@
+Entry.Language = {};
+
+Entry.Language.MOVING = "움직임";
+Entry.Language.LOOKS = "생김새";
+Entry.Language.BRUSH = "붓";
+Entry.Language.TEXT = "글상자";
+Entry.Language.SOUND = "소리";
+Entry.Language.START = "시작";
+Entry.Language.FLOW = "흐름";
+Entry.Language.JUDGEMENT = "판단";
+Entry.Language.CALC = "계산";
+Entry.Language.VARIABLE = "변수";
+Entry.Language.SCENE = "장면";
+Entry.Language.ARDUINO = "아두이노";
+Entry.Language.PROJECTDEFAULTNAME = ["멋진", "재밌는", "착한", "큰", "대단한", "잘생긴", "행운의"];
+Entry.Language.ko = "한국어";
+Entry.Language.en = "영어";
+Entry.Language.vn = "베트남어";
+Entry.Blocks = {};
+Entry.Blocks.when_run_button_click = "실행하기 버튼을 클릭했을 때";
+Entry.Blocks.press_some_key_1 = "";
+Entry.Blocks.press_some_key_2 = "키를 눌렀을 때";
+Entry.Blocks.press_some_key_up = "위 화살표";
+Entry.Blocks.press_some_key_down = "아래 화살표";
+Entry.Blocks.press_some_key_left = "왼쪽 화살표";
+Entry.Blocks.press_some_key_right = "오른쪽 화살표";
+Entry.Blocks.press_some_key_enter = "엔터";
+Entry.Blocks.press_some_key_space = "스페이스";
+Entry.Blocks.mouse_clicked = "마우스를 클릭했을 때";
+Entry.Blocks.mouse_click_cancled = "마우스 클릭을 해제했을 때";
+

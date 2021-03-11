@@ -1,0 +1,562 @@
+* {
+  font-family: NanumGothic;
+}
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+}
+body {
+  min-width: 800px;
+}
+.entryHide {
+  visibility: hidden;
+}
+.selectDisable,
+.entryButton,
+.entryConfirmButton,
+.entryCancelButton,
+.entryGuideButton {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.selectAble {
+  -webkit-touch-cautoout: auto;
+  -webkit-user-select: auto;
+  -khtml-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: element;
+  user-select: auto;
+}
+.content {
+  margin-top: 0;
+  width: 100%;
+  min-width: 1024px;
+  background-color: #f9f8f7;
+  position: relative;
+  padding-bottom: 129px;
+}
+.lbr {
+  line-height: 5px;
+}
+.modal-body.noSubmitter {
+  overflow: hidden !important;
+}
+.entryButton,
+.entryConfirmButton,
+.entryCancelButton,
+.entryGuideButton {
+  width: 102px;
+  height: 42px;
+  border-radius: 5px;
+  line-height: 41px;
+  font-size: 15px;
+  font-family: nanumBarunBold;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+.entryConfirmButton {
+  color: white;
+  background-color: #6e5ae6;
+}
+.entryCancelButton {
+  color: #9e9e9f;
+  background-color: #e5e5e5;
+}
+.entryGuideButton {
+  color: #9e9e9f;
+  background-color: #e5e5e5;
+}
+.entryLogoColor {
+  height: 43px;
+  width: 139px;
+  background-image: url('../../static/img/assets/entry_logo_color.png');
+  margin-left: 84px;
+}
+.entryCheckBox,
+.entryCheckBoxChecked {
+  width: 14px;
+  height: 14px;
+  margin-top: 2px;
+  border: 2px solid #cec5bc;
+  display: inline-block;
+  cursor: pointer;
+}
+.entryCheckBoxChecked {
+  background: #cec5bc;
+}
+.entryDefaultButton,
+.entryConfirmBlueButton {
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 32px;
+  color: #b4b4b5;
+  font-size: 13px;
+  font-family: nanumBarunBold;
+  background-color: #f9f8f7;
+  border: solid 1px #b4b4b5;
+  padding: 0 10px;
+}
+.studentName div,
+.studentUsername div {
+  width: 80px;
+}
+.entryEllipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.entryConfirmBlueButton {
+  border: solid 1px #5096f5;
+  color: #5096f5;
+}
+#reportProject {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1050;
+  background: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  display: none;
+}
+.reportWrapper {
+  width: 400px;
+  border-radius: 6px;
+  position: fixed;
+  top: 10%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.reportHeader {
+  background: #ff9e00;
+  height: 60px;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  padding: 20px 0 0 42px;
+  font-family: nanumBarunBold;
+  font-size: 26px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 16px;
+}
+.reportContent {
+  background-color: white;
+  position: relative;
+  padding-top: 36px;
+  padding-bottom: 43px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-left: 42px;
+  font-family: NanumGothic;
+}
+.reportAdvice {
+  float: right;
+  margin-right: 10px;
+  cursor: pointer;
+}
+#reportProjectSubmitForm > div {
+  margin-top: 20px;
+  font-size: 15px;
+  color: #888888;
+}
+#reportProjectSubmitForm > div .reportCause {
+  display: none;
+}
+#reportProjectSubmitForm > div .causeBoxImg {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+#reportProjectSubmitForm > div > input {
+  vertical-align: top;
+  margin-top: 4px;
+  margin-right: 5px;
+}
+#reportProjectSubmitForm div.reportIllegal {
+  margin-top: 0;
+}
+#reportProjectSubmitForm div.reportEtcTextArea {
+  margin-top: 10px;
+}
+.etcTextArea {
+  width: 302px;
+  height: 102px;
+  resize: none;
+  padding: 8px;
+  font-size: 15px;
+}
+.emailArea {
+  width: 302px;
+  height: 40px;
+  font-size: 15px;
+  padding-left: 8px;
+}
+.emailWrapper {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.emailArea {
+  margin-top: 10px;
+}
+.buttonArea {
+  padding-right: 42px;
+  margin: 0 auto;
+  text-align: center;
+}
+.buttonArea > button {
+  margin-top: 5px;
+}
+.reportBtnCancel {
+  text-align: center;
+}
+.reportBtnSubmit {
+  margin-left: 10px;
+  background: #ff9900;
+  color: white;
+  text-align: center;
+}
+#reportProjectSuccessWrapper {
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1111;
+  background: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  display: none;
+}
+.reportProjectContentSuccessWrapper {
+  width: 400px;
+  height: 576px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.reportProjectSuccessTitle {
+  background: #ff9900;
+  height: 60px;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  padding: 12px 0 0 42px;
+  font-family: nanumBarunBold;
+  font-size: 26px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.reportProjectSuccessBody {
+  background-color: white;
+  height: 170px;
+  position: relative;
+  padding-top: 20px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-family: NanumGothic;
+  text-align: center;
+}
+.reportProjectSuccessBodyContent {
+  margin: 25px;
+  font-size: Medium;
+}
+.reportProjectSuccessBodyButton {
+  background: #ff9900;
+}
+.entryInputBox {
+  border: 2px solid #cec5bc;
+  border-radius: 3px;
+  background: white;
+}
+.entryInputBox:focus {
+  outline: none;
+  border: 2px solid #1bafea;
+}
+.entryBaseWrapper {
+  width: 100%;
+  min-width: 1024px;
+  position: relative;
+}
+.entryBaseContainer {
+  width: 1024px;
+  left: 50%;
+  margin-left: -512px;
+  position: relative;
+}
+.entryCenter {
+  margin: 0 auto;
+  display: block;
+}
+.entryPathNorm {
+  margin-right: 18px;
+  font-family: nanumBarunBold;
+}
+.entryPathNorm a {
+  color: #9f9fa5;
+}
+.entryPathEnable a,
+.entryPathEnable {
+  color: #4b37a0 !important;
+  font-family: nanumBarunBold;
+  font-size: 18px;
+}
+.entryPathHigh {
+  font-family: nanumBarunBold;
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-right: 18px;
+  position: relative;
+  display: inline-block;
+  color: #9f9fa5;
+}
+.entryPathHigh .down_arrow {
+  width: 9px;
+  height: 7px;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  vertical-align: top;
+  background-image: url('../../static/img/assets/entryPathArrow.png');
+}
+.entryPathHigh > a {
+  color: #9f9fa5;
+  margin-left: 5px;
+}
+.entryPathHigh.open {
+  background: #dbdbdb;
+}
+.entryPathDropdown {
+  padding: 2px;
+  border: 2px solid #6d5af2;
+  margin-top: 5px;
+  font-size: 16px;
+  min-width: 140px;
+}
+.entryPathDropdown > li > a {
+  color: #b4b4b5;
+  padding-left: 10px;
+  font-size: 15px;
+}
+.entryPathDropdown > li > a:hover,
+.entryPathDropdown > li > a:active {
+  color: white !important;
+  background: #6d5af2;
+}
+.entryRemoveMargin {
+  margin: 0;
+}
+.entryNotFixed {
+  position: relative;
+}
+.entryFixed {
+  position: fixed;
+}
+.entryOverflowHidden {
+  overflow: hidden;
+}
+.entryCenterAlign {
+  text-align: center;
+}
+pre {
+  white-space: pre-line;
+}
+.selectedUrl {
+  position: relative;
+  left: 95.5px;
+  top: 25px;
+  z-index: 36;
+  display: block;
+}
+.entryCommentButton {
+  float: right;
+  margin-left: 10px;
+}
+@media only screen and (max-device-width: 480px), only screen and (min-device-width: 560px) and (max-device-width: 1136px) and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    min-height: 800px;
+  }
+  .content {
+    min-width: 100%;
+  }
+}
+[ng-cloak] {
+  display: none !important;
+}
+.license {
+  width: 1024px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+ld-button div.ld-button-anim {
+  height: 100%;
+  display: none;
+}
+ld-button div.ld-button-anim span.ld-box {
+  content: ' ';
+  top: 50%;
+  position: relative;
+  width: 5px;
+  height: 5px;
+  margin: -4px 0 0;
+  display: inline-block;
+  background-color: #ffffff;
+  opacity: 0.4;
+  border-radius: 2px;
+  animation: ld_bound 1s infinite;
+}
+ld-button div.ld-button-anim span.ld-box:not(:last-child) {
+  margin-right: 7px;
+}
+ld-button div.ld-button-anim span.ld-box:nth-child(2) {
+  animation-delay: 0.25s;
+}
+ld-button div.ld-button-anim span.ld-box:nth-child(3) {
+  animation-delay: 0.5s;
+}
+ld-button div.ld-button-anim span.ld-box:nth-child(4) {
+  animation-delay: 0.75s;
+}
+ld-button.active .ld-button-text {
+  display: none;
+}
+ld-button.active .ld-button-anim {
+  display: block;
+}
+@keyframes ld_bound {
+  from {
+    transform: translate(0, -4px);
+    opacity: 1;
+  }
+  24% {
+    transform: translate(0, -4px);
+    opacity: 1;
+  }
+  25% {
+    transform: translate(0, 0);
+    opacity: 0.4;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 0.4;
+  }
+}
+.guideWrapper {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  height: 100%;
+  background-color: gray;
+  z-index: 99999;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.guideWrapperPanel {
+  width: 485px;
+  height: 619px;
+  background-color: white;
+  margin: 10px auto;
+}
+.guideWrapperPanelHeader {
+  width: 100%;
+  height: 54px;
+  background-color: #2a7def;
+  color: white;
+  padding: 16px 0px 18px 30px;
+}
+.guideWrapperPanelHeaderTitle {
+  font-size: 18px;
+  width: 405px;
+  display: inline-block;
+}
+.guideWrapperPanelHeaderCancelBtn {
+  vertical-align: top;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-image: url('../../static/img/assets/guide/close.png');
+  cursor: pointer;
+}
+.guideWrapperPanelContent {
+  padding: 26px 33px 0 px 33px;
+}
+.guideWrapperPanelContentLine {
+  width: 419px;
+  height: 2px;
+  color: #d8d8d8;
+  margin-top: 0px;
+  margin-bottom: 9px;
+}
+.guideWrapperPanelContentImage {
+  width: 419px;
+  height: 90px;
+  display: block;
+  background-image: url('../../static/img/assets/guide/mask.png');
+  margin: 26px auto 17px;
+}
+.guideWrapperPanelContentGoStraight {
+  margin-top: 11px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.guideWrapperPanelContentDescription {
+  text-align: center;
+}
+.guideWrapperPanelContentDescriptionTitle {
+  font-size: 20px;
+}
+.guideWrapperPanelContentDescriptionContent {
+  font-size: 14px;
+  margin-top: 8px;
+  color: #3b3b3b;
+}
+.guideWrapperPanelContentDescriptionContent1 {
+  height: 56px;
+}
+.guideWrapperPanelContentDescriptionContent2 {
+  height: 36px;
+}
+.guideWrapperPanelContentDescriptionRecommand {
+  height: 36px;
+  font-size: 14px;
+  color: #9d9d9d;
+  font-family: NanumGothic;
+  font-weight: 300;
+}
+.guideWrapperPanelContentDescriptionBye {
+  margin-top: 5px;
+  font-size: 14px;
+}
+.guideWrapperPanelContentHwDownload {
+  margin-top: 13px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.guideWrapperPanelContentButton {
+  margin: 9px auto 0px;
+}
+.guideWrapperPanelContentCheck {
+  margin-top: 10px;
+  text-align: left;
+  display: block;
+  cursor: pointer;
+}
+.guideWrapperPanelContentCheckShow {
+  display: inline-block;
+  margin-left: 34px;
+}
+.guideWrapperPanelContentCheckComment {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 7px;
+}

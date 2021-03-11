@@ -1,0 +1,81 @@
+<!DOCTYPE html><html lang="en">
+<!-- Mirrored from playentry.org/ie by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 11 Mar 2021 14:28:49 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head><link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css"><link rel="stylesheet" href="css/pages/ie.css"><script type="text/javascript" src="lib/jquery/jquery.min.js"></script></head><script type="text/javascript" src="js/lang/en656e.js?v=1615466924704"></script><body><div id="wrapper"><div class="notsupport">
+    <div>
+        <p id="title">이 브라우저는<br/>지원하지 않습니다.</p>
+        <div>
+            <span id="desc">
+                엔트리는 인터넷 익스플로러 11 버전 이상 또는 크롬 브라우저에서 이용하실 수 있습니다.<br/>
+                윈도우 업데이트를 진행하시거나, 크롬 브라우저를 설치해주세요.<br/>
+                엔트리 오프라인 버전은 인터넷이 연결되어 있지 않아도 사용할 수 있습니다. 지금 다운받아서 시작해보세요!
+            </span>
+        </div>
+    </div>
+    <div class="download">
+        <a href="http://www.google.com/chrome/index.html">
+            <div id="chrome_download" class="downloadBox">
+                크롬 브라우저<br>다운로드
+            </div>
+        </a>
+        <a href="http://windows.microsoft.com/ko-kr/internet-explorer/download-ie">
+            <div id="windows_update" class="downloadBox">
+                윈도우 최신버전<br>업데이트
+            </div>
+        </a>
+        <a href='#' id="win32_x86" style="display:none;" onclick="downloadLink('win32_x86')">
+            <div class="downloadBox windows">
+                엔트리 오프라인 32bit<br>다운로드
+            </div>
+        </a>
+        <a href='#' id="win32_x64" style="display:none;" onclick="downloadLink('win32_x64')">
+            <div class="downloadBox windows">
+                엔트리 오프라인 64bit<br>다운로드
+            </div>
+        </a>
+        <a href='#' id="darwin" style="display:none;" onclick="downloadLink('darwin')">
+            <div class="downloadBox mac">
+                엔트리 오프라인<br>다운로드
+            </div>
+        </a>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var ua = navigator.userAgent.toLowerCase();
+    if (!(/msie/gi.test(ua) || typeof Node === 'undefined'))
+        window.location.href = 'index.html';
+    var apps = {};
+    function downloadLink(key) {
+        var app = apps[key];
+        var filename = app.filename;
+        var link = 'https://www.playentry.org/apps/' + filename;
+        $.ajax('/down/' + filename).done(function() {
+            window.location.href = link;
+        });
+    }
+
+    $.ajax({
+        url: '/api/admin/getListForApps?rows=1&category=offline',
+    }).then(function (data) {
+        var result = data[0];
+        apps = result.apps;
+        for(var key in apps) {
+            $('#' + key).show();
+        }
+    });
+
+    if(Lang) {
+        var msg = Lang.Msgs;
+        $('#title').html(msg.ie_page_title);
+        $('#desc').html(msg.ie_page_desc);
+        $('#chrome_download').html(msg.ie_page_chrome_download);
+        $('#windows_update').html(msg.ie_page_windows_update);
+        $('#offline_32bit_download').html(msg.ie_page_offline_32bit_download);
+        $('#offline_64bit_download').html(msg.ie_page_offline_64bit_download);
+        $('#offline_mac_download').html(msg.ie_page_offline_mac_download);
+    }
+</script>
+</div><!--Google Analytics--><script type="text/javascript" src="js/analytics.js"></script><script type="text/javascript" src="js/lcslog.js">// nals real</script></body>
+<!-- Mirrored from playentry.org/ie by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 11 Mar 2021 14:28:51 GMT -->
+</html>

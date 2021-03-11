@@ -1,0 +1,76 @@
+@import url(../../../fonts.googleapis.com/earlyaccess/nanumgothic.css);
+body {
+  /*background: url('/img/assets/msie.png') no-repeat center center fixed; */
+  background-image: url('../../img/assets/msie.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: #4aa5d3;
+  position: fixed;
+  font-family: NanumGothic;
+  text-align: center;
+}
+.notsupport {
+  position: fixed;
+  width: 100%;
+  margin: 100px auto;
+  text-align: center;
+}
+.notsupport > div > p {
+  font-size: 55px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.notsupport > div > div > span {
+  font-size: 12pt;
+  color: #fff;
+  line-height: 30px;
+}
+.download {
+  margin: 0 auto;
+  margin-top: 35px;
+}
+.download .downloadBox {
+  display: inline-block;
+  width: 126px;
+  height: 130px;
+  border: 1px solid #fff;
+  font-size: 16px;
+  border-radius: 3px;
+  font-family: NanumGothic;
+  color: #fff;
+  padding-top: 28px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.download a {
+  color: #fff;
+}
+.download a:focus,
+.download a:hover {
+  outline: none;
+  color: #fff;
+  text-decoration: none;
+}
+.downloadBox.windows {
+  background-image: url('../../img/assets/icon_windows.png');
+  background-repeat: no-repeat;
+  background-position: 50px 10px;
+  padding-top: 46px;
+  vertical-align: top;
+}
+.downloadBox.mac {
+  background-image: url('../../img/assets/icon_mac.png');
+  background-repeat: no-repeat;
+  background-position: 50px 10px;
+  padding-top: 46px;
+  vertical-align: top;
+}
+.window {
+  margin-top: 24px;
+  float: left;
+}
+.chrome {
+  margin-top: 10px;
+  float: right;
+}
